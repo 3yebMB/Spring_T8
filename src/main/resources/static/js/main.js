@@ -7,7 +7,6 @@ $(document).ready(function() {
     });
     $('#btnHello').toggleClass( "btn btn-primary" )
 
-
     $('#btnHello').click(function (e) {
         $.post("/about/test_param", {
             name_param: $('#newTestParam').val()
@@ -16,6 +15,4 @@ $(document).ready(function() {
         });
         // console.log($('#newCustomerName').val());
     });
-
-
 });
