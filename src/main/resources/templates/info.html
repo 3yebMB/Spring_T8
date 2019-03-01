@@ -20,19 +20,24 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="/printme">Printme</a></li>
+                <!--<li><a href="/printme">Printme</a></li>-->
                 <li class="active"><a href="#">info</a></li>
                 <li><a href="/about">About</a></li>
+                <li><a href="/blank">Blank</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<h2>
-    <p>The Chelyabinsk meteor entered Earth's atmosphere over Russia on <time datetime="2013-02-15T09:20+06:00">15 February 2013 at about 09:20 YEKT (03:20 UTC)</time>.</p>
-
-    <p>The Apollo 13 mission lasted a total of <time datetime="5d 22h 54m 41s">5 days, 22 hours, 54 minutes, and 41 seconds</time>.</p>
-</h2>
+<div class="container">
+    <div class="starter-template">
+        <h1>Important information</h1>
+        <h2>
+            <span th:text="'Well known facts : ' + ${message} + '.'"></span>
+        </h2>
+        <!--<button id="btnHello">Hello</button>-->
+    </div>
+</div>
 
 <script type="text/javascript"
         src="webjars/jquery/3.2.1/jquery.js" />
